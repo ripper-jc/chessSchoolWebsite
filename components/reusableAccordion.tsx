@@ -4,12 +4,13 @@ import {
     AccordionItem,
     AccordionTrigger,
   } from "@/components/ui/accordion"
+import { JSX } from "react";
 
 
 
 interface ReusableAccordionProps {
     title: string;
-    text: any;
+    text: string | JSX.Element; // Specify a different type instead of 'any'
 }
 
 export default function ReusableAccordion({title, text}: ReusableAccordionProps) {

@@ -1,15 +1,14 @@
 import {
     Card,
     CardContent,
-    CardDescription,
-    CardFooter,
     CardHeader,
     CardTitle,
   } from "@/components/ui/card"
+import { JSX } from "react";
 
 interface TimeCardProps {
     day: string;
-    text: any;
+    text: string | JSX.Element;
 }
 
 export default function TimeCard({ day, text }: TimeCardProps) {

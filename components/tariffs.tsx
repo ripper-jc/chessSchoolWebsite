@@ -1,11 +1,12 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import {Button} from "@/components/ui/button";
+import { JSX } from "react";
 
 interface TariffsProps {
-    image: any;
-    title:string;
+    image: StaticImageData; // Changed from 'any' to 'StaticImageData'
+    title: string;
     level: string;
-    text: any;
+    text: string | JSX.Element; // Changed from 'any' to 'string'
     order: number;
 }
 

@@ -1,9 +1,11 @@
+import { JSX } from "react";
+
 interface TariffListItemProps {
     numListItem: number;
-    text: any;
+    text: JSX.Element; // Changed from 'any' to 'string'
 }
 
-export default function ({numListItem, text}: TariffListItemProps) {
+function TariffListItem({numListItem, text}: TariffListItemProps) {
   return (
     <>
       <div>
@@ -14,3 +16,7 @@ export default function ({numListItem, text}: TariffListItemProps) {
     </>
   );
 }
+
+TariffListItem.displayName = "TariffListItem"; // Added display name
+
+export default TariffListItem;

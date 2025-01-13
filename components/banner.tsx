@@ -1,4 +1,3 @@
-import { BookmarkPlus, Info } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import bannerImageBig from "@/public/banner_big.jpeg"
@@ -8,7 +7,6 @@ export default function Component() {
     <div className="relative w-full h-[100dvh] max-h-[100dvh] min-h-[400px] overflow-hidden z-0 ">
       {/* Background Video */}
      
-
       <Image
         src={bannerImageBig}
         //loader={}
@@ -45,7 +43,7 @@ export default function Component() {
       {/* Screen Reader Only Description */}
       <div className="sr-only">
         Banner for Anime Title. The background shows a video clip from the
-        anime. On the left, there's information about the series and options to
+        anime. On the left, there&apos;s information about the series and options to
         learn more or bookmark for later viewing.
       </div>
     </div>

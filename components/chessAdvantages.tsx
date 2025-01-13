@@ -1,7 +1,9 @@
+import { JSX } from "react";
+
 interface ChessAdvantagesProps {
     title: string;
-    text: any;
-    chessFigure: any;
+    text: string | JSX.Element;
+    chessFigure: JSX.Element;
 }
 
 export default function ChessAdvantages({title, text, chessFigure}: ChessAdvantagesProps) {

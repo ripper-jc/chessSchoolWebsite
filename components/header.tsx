@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Facebook, Twitter, Instagram, Send } from 'lucide-react'
+import { Facebook, Instagram, Send } from 'lucide-react'
 import logo from '@/public/logo.png'
 
 const navItems = [

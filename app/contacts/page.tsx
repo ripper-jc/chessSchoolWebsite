@@ -1,7 +1,6 @@
 import Title from "@/components/title";
 import Image from "next/image";
 import Contact from "@/public/contacts.jpg";
-import { Button } from "@/components/ui/button";
 
 export default function Contacts() {
     return (

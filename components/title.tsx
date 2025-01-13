@@ -1,6 +1,8 @@
+import { JSX } from 'react';
+
 interface TitleProps {
   title: string;
-  subtitle: any;
+  subtitle: string | JSX.Element;
 }
 
 export default function Title({ title, subtitle }: TitleProps) {

@@ -1,9 +1,9 @@
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 
 interface TrainerCardProps {
-  image: any
+  image: StaticImageData
   name: string
   title: string
   qualifications: string[]
