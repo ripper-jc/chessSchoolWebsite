@@ -5,11 +5,11 @@ import logo from '@/public/logo.png'
 
 const navItems = [
   { name: 'ГОЛОВНА', href: '/' },
-  { name: 'ТАРИФИ', href: '/about' },
-  { name: 'ТРЕНЕРИ', href: '/services' },
-  { name: 'ПРОГРАМА', href: '/portfolio' },
-  { name: 'РОЗКЛАД', href: '/blog' },
-  { name: 'ПРО НАС', href: '/contacts#contacts' },
+  { name: 'ТАРИФИ', href: '/prices' },
+  { name: 'ТРЕНЕРИ', href: '/aboutschool#trainers' },
+  { name: 'ПРОГРАМА', href: '/prices#program' },
+  { name: 'РОЗКЛАД', href: '/prices#schedule' },
+  { name: 'ПРО НАС', href: '/aboutschool' },
   { name: 'КОНТАКТИ', href: '/contacts' },
 ]
 
@@ -34,7 +34,7 @@ export default function Header() {
             </div>
 
             {/* Navigation for larger screens */}
-            <nav className="hidden md:block">
+            <nav className="hidden lg:block">
               <ul className="flex space-x-4">
                 {navItems.map((item) => (
                   <li key={item.name}>
@@ -50,7 +50,7 @@ export default function Header() {
             </nav>
 
             {/* Social Icons for larger screens */}
-            <div className="hidden md:flex items-center space-x-4">
+            <div className="hidden lg:flex items-center space-x-4">
               {socialIcons.map(({ Icon, href }) => (
                 <a
                   key={href}
@@ -65,7 +65,7 @@ export default function Header() {
             </div>
 
             {/* Mobile menu button - remove input, keep only label */}
-            <div className="md:hidden">
+            <div className="lg:hidden">
               <label htmlFor="menu-toggle" className="block text-gray-700 hover:text-gray-900 cursor-pointer">
                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -77,7 +77,7 @@ export default function Header() {
       </header>
 
       {/* Mobile menu - update peer selector */}
-      <div className="md:hidden fixed top-16 left-0 right-0 z-40 bg-white shadow-md transition-all duration-300 max-h-0 overflow-hidden [.peer:checked~&]:max-h-screen">
+      <div className="lg:hidden fixed top-16 left-0 right-0 z-40 bg-white shadow-md transition-all duration-300 max-h-0 overflow-hidden [.peer:checked~&]:max-h-screen">
         <nav className="px-2 pt-2 pb-3 space-y-1">
           {navItems.map((item) => (
             <Link 

@@ -16,10 +16,10 @@ export default function ReusableAccordion({title, text}: ReusableAccordionProps)
     return (
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
-          <AccordionTrigger className="text-lg py-6 font-semibold">
+          <AccordionTrigger className="text-xl py-6 font-semibold">
             {title}
           </AccordionTrigger>
-          <AccordionContent className="text-">
+          <AccordionContent className="text-md">
             {text}
           </AccordionContent>
         </AccordionItem>
