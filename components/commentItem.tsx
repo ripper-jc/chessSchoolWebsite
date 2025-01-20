@@ -21,7 +21,7 @@ export default function CommentItem({ imgSrc, text, name, nameMore }: CommentIte
                     />
                 </div>
             </div>
-            <div className="p-2 md:p-6 text-center max-w-[40rem]">
+            <div className="p-10 md:p-6 text-center max-w-[40rem]">
                 
                 <p className="">{text}</p>
                 <h3 className="text-xl font-medium mb-4 mt-6">{name}</h3>

@@ -1,7 +1,9 @@
+"use client"
 import Image from 'next/image'
 import Link from 'next/link'
 import { Facebook, Instagram, Send } from 'lucide-react'
 import logo from '@/public/logo.png'
+import { useState } from 'react'
 
 const navItems = [
   { name: 'ГОЛОВНА', href: '/' },
@@ -20,9 +22,15 @@ const socialIcons = [
 ]
 
 export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleLinkClick = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <div className="relative">
-      <input type="checkbox" id="menu-toggle" className="hidden peer" />
+      <input type="checkbox" id="menu-toggle" className="hidden peer" checked={menuOpen} onChange={() => setMenuOpen(!menuOpen)} />
       <header className="bg-amber-300 shadow-sm fixed top-0 w-full z-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
@@ -38,7 +46,7 @@ export default function Header() {
               <ul className="flex space-x-4">
                 {navItems.map((item) => (
                   <li key={item.name}>
-                    <Link 
+                    <Link
                       href={item.href}
                       className="text-gray-700 hover:text-stone-400 px-3 py-2 rounded-md text-md font-bold transition-all duration-300"
                     >
@@ -66,9 +74,22 @@ export default function Header() {
 
             {/* Mobile menu button - remove input, keep only label */}
             <div className="lg:hidden">
-              <label htmlFor="menu-toggle" className="block text-gray-700 hover:text-gray-900 cursor-pointer">
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <label
+                htmlFor="menu-toggle"
+                className="block text-gray-700 hover:text-gray-900 cursor-pointer"
+              >
+                <svg
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
                 </svg>
               </label>
             </div>
@@ -80,10 +101,11 @@ export default function Header() {
       <div className="lg:hidden fixed top-16 left-0 right-0 z-40 bg-white shadow-md transition-all duration-300 max-h-0 overflow-hidden [.peer:checked~&]:max-h-screen">
         <nav className="px-2 pt-2 pb-3 space-y-1">
           {navItems.map((item) => (
-            <Link 
+            <Link
               key={item.name}
               href={item.href}
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+              onClick={handleLinkClick}
             >
               {item.name}
             </Link>
@@ -97,6 +119,7 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-500 hover:text-gray-700"
+              onClick={handleLinkClick}
             >
               <Icon className="h-5 w-5" />
             </a>
@@ -104,6 +127,6 @@ export default function Header() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 

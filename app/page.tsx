@@ -55,7 +55,7 @@ const chessContent = [
   {
     type: "text",
     title: "Нестандартне мислення",
-    text: 'Шахи- це гра, в основі якої лежить складна багаторівнева логіка та оригінальний ігровий світ. Підготовка пасток і контрударів для суперника, приховування власних планів... , виступають відмінним тренажером "думай-не-як-всі", що дає чудовий поштовх для розвитку творчих здібностей у дитини.',
+    text: 'Шахи - це гра, в основі якої лежить складна багаторівнева логіка та оригінальний ігровий світ. Підготовка пасток і контрударів для суперника, приховування власних планів виступають відмінним тренажером "думай-не-як-всі", що дає чудовий поштовх для розвитку творчих здібностей у дитини.',
     order: "order-4 xl:order-3",
   },
   {
@@ -73,7 +73,7 @@ const chessContent = [
   {
     type: "text",
     title: "Інтелектуальні навички",
-    text: "Під час партії задіяні обидві півкулі людського мозку і одночасно використовується логічне та абстрактне мислення. Діти вчяться аналізувати ситуації та робити висновки. Також гра в шахи сприяє швидкому розвитку пам'яті та системному мисленню, тренуючи кмітливість ... .",
+    text: "Під час партії задіяні обидві півкулі людського мозку і одночасно використовується логічне та абстрактне мислення. Діти вчаться аналізувати ситуації та робити висновки. Також гра в шахи сприяє швидкому розвитку пам'яті та системному мисленню, тренуючи кмітливість.",
     order: "order-5 xl:order-6",
   },
   {
@@ -140,7 +140,7 @@ export default function Home() {
           title="Безкоштовне перше заняття"
           text={
             <>
-              Дитина зрозуміє чи цікаві йому шахи. <br />
+              Дитина зрозуміє, чи цікаві йому шахи. <br />
               Експрес-діагностика шахового рівня. <br />
               Рекомендації щодо напрямів удосконалення шахіста. Відповіді на
               запитання.
@@ -149,14 +149,14 @@ export default function Home() {
           chessFigure={<FontAwesomeIcon icon={faChessKing} className="fa-3x" />}
         />
         <ChessAdvantages
-          title="Онлайн -заняття"
+          title="Онлайн-заняття"
           text={
             <>
-              Мобільність-достатньо підключення до швидкісного Інтернету та
-              комп’ютера, ноутбука, чи смартфона.
+              Мобільність - достатньо підключення до швидкісного Інтернету та
+              комп’ютера, ноутбука чи смартфона.
               <br />
-              Економія часу- вдома потрібно, просто, відкрити ноутбук і зручно
-              вмоститись в кріслі.
+              Економія часу - вдома потрібно просто відкрити ноутбук і зручно
+              вмоститися в кріслі.
               <br />
               Під час online-навчання значно легше контролювати навчальний
               процес, а тому значно важче «халявити».
@@ -164,8 +164,8 @@ export default function Home() {
               Навчання проходить на спеціальній платформі, де Ви зможете
               відстежувати прогрес.
               <br />
-              Заняття триває 60 хв. , складається з теоретичної та практичної
-              частини
+              Заняття триває 60 хв., складається з теоретичної та практичної
+              частини.
               <br />
               Проводимо турніри кожної неділі між групами нашої школи.
             </>
@@ -178,8 +178,8 @@ export default function Home() {
           title="Міні групи"
           text={
             <>
-              Проводим набір дітей з 6-17 років, формуються групи в залежності
-              від рівня знать та віку учнів . <br />
+              Проводимо набір дітей з 6-17 років, формуються групи в залежності
+              від рівня знань та віку учнів. <br />
               Кількість дітей в групі від 6-10 дітей.
               <br />
               Для ефективного засвоєння матеріалу, на практичній частині
@@ -233,9 +233,9 @@ export default function Home() {
                   <em>Практична частина:</em>
                 </strong>
               </p>
-              <p>✔ Шахіст грає з тренером або іншими учнем;</p>
+              <p>✔ Шахіст грає з тренером або іншим учнем;</p>
               <p>
-                ✔ Тренер , виступає як ментор, виявляє помилки, налаштовує на те
+                ✔ Тренер виступає як ментор, виявляє помилки, налаштовує на те
                 , щоб дитина обмірковувала, аналізувала свої ходи та суперника
                 ...{" "}
               </p>
@@ -256,7 +256,7 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-10 mt-5">
           <Step
             title="Заповнення анкети"
-            text="Для першочергового визначення рівня знать шахіста та час занять, який йому краще підходить"
+            text="Для першочергового визначення рівня знань шахіста та час занять, який йому краще підходить"
             stepNumber="1"
           />
           <Step
@@ -286,15 +286,15 @@ export default function Home() {
       </div>
 
       <div className="relative h-[100dvh]">
-        <Image src={Banner2} alt="Banner" layout="fill" objectFit="cover" />
-        <div className="absolute inset-0 bg-black bg-opacity-50 overflow-hidden">
-          
-        </div>
-        <div className="relative w-full h-full max-w-4xl mx-auto px-4 py-12 flex flex-col justify-center items-center">
-          <h2 className="text-3xl font-bold mb-6 text-white text-center">Що говорять про нас наші клієнти?</h2>
-          <Carousel>
-            <CarouselContent>
-              <CarouselItem>
+        <Image src={Banner2} alt="Banner" fill className="object-cover" />
+        <div className="absolute inset-0 bg-black bg-opacity-50 overflow-hidden"></div>
+        <div className="relative w-full h-full max-w-full mx-auto sm:px-4 py-12 flex flex-col justify-center items-center">
+          <h2 className="text-3xl font-bold mb-6 text-white text-center">
+            Що говорять про нас наші клієнти?
+          </h2>
+          <Carousel className="container mx-auto m">
+            <CarouselContent className="w-full">
+              <CarouselItem className="pl-0">
                 <CommentItem
                   imgSrc={client1.src}
                   text="Досить довго шукала таку онлайн-школу шахів для своєї дочки . Дуже сподобалась структура занять, вважаю, що вона ефективна. King&Queen - це команда професіоналів, відповідальних людей. "
@@ -302,7 +302,7 @@ export default function Home() {
                   nameMore="Мама Яни, 13 р"
                 />
               </CarouselItem>
-              <CarouselItem>
+              <CarouselItem className="pl-0">
                 <CommentItem
                   imgSrc={client2.src}
                   text='Я по-справжньому відкрив для себе шахи зі школою "King&Queen". Кожен урок відкривається для мене по-новому і чогось навчає. Навички, які я отримую при навчанні та грі у шахи, легко переносяться у життя. Обдумування кожного ходу, терпіння та справжня радість успіху, якого ти досягаєш не за рахунок удачі, а за рахунок стратегії і тактики - ось, що таке шахи для мене'
@@ -310,7 +310,7 @@ export default function Home() {
                   nameMore="Шахіст, 16 р"
                 />
               </CarouselItem>
-              <CarouselItem>
+              <CarouselItem className="pl-0">
                 <CommentItem
                   imgSrc={client3.src}
                   text="Ми займаємось лише місяць. Два непосидючі хлопчики 8-и років. Вчитель дуже терплячий і послідовний.  "
@@ -318,7 +318,7 @@ export default function Home() {
                   nameMore="Мама Олега 8 р. та Ярослава 8 р."
                 />
               </CarouselItem>
-              <CarouselItem>
+              <CarouselItem className="pl-0">
                 <CommentItem
                   imgSrc={client4.src}
                   text="Дякую за таку можливість дистанційно займатися шахами, у Оксани з’явилися нові друзі, навчання в вашій школі проходить задоволенням, дякую тренеру та куратору! "
@@ -326,11 +326,9 @@ export default function Home() {
                   nameMore="Мама Оксани 7 р."
                 />
               </CarouselItem>
-
-
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="absolute left-0 ml-1 md:ml-4 lg:ml-6" />
+            <CarouselNext className="absolute right-0 mr-1 md:mr-4 lg:mr-6" />
           </Carousel>
         </div>
       </div>
@@ -433,14 +431,16 @@ export default function Home() {
         </div>
       </div>
 
-
       <div className="relative h-[100dvh]">
         <Image src={banner3} alt="Banner" layout="fill" objectFit="cover" />
-        <div className="absolute inset-0 bg-black bg-opacity-50 overflow-hidden">
-          
-        </div>
+        <div className="absolute inset-0 bg-black bg-opacity-50 overflow-hidden"></div>
         <div className="relative w-full h-full max-w-4xl mx-auto px-4 py-12 flex flex-col justify-center items-center text-white text-center">
-          <Title title="Запишіться на безкоштовне заняття до одного з наших викладачів" subtitle={"Це можливість зустрітися з групою, подивитись , як проходить заняття та отримати консультацію"} />
+          <Title
+            title="Запишіться на безкоштовне заняття до одного з наших викладачів"
+            subtitle={
+              "Це можливість зустрітися з групою, подивитись , як проходить заняття та отримати консультацію"
+            }
+          />
           <form className="w-full max-w-lg p-8 ">
             <div className="mb-4">
               <input
@@ -474,12 +474,12 @@ export default function Home() {
                 Записатися
               </button>
             </div>
-            <p className="text-sm text-gray-300 p-5">You agree to our Terms and Conditions</p>
+            <p className="text-sm text-gray-300 p-5">
+              You agree to our Terms and Conditions
+            </p>
           </form>
         </div>
       </div>
-
-
     </>
   );
 }
