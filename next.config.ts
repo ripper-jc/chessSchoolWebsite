@@ -5,7 +5,6 @@ const nextConfig: NextConfig = {
   /* config options here */
   basePath: isProd ? "/chess-school-website-seven.vercel.app" : "",
   output: "export",
-  distDir: "dist",
 };
 
 export default nextConfig;
